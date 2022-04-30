@@ -1,0 +1,267 @@
+/*Universal box sizing*/
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;  
+    padding:0;
+    }
+    
+
+/*style the header*/
+.header{
+    color: white;
+    background-color: rgb(82, 86, 89);
+    text-align: center;
+    padding:0.5vw;
+    font-size: 2vw;
+}
+
+/*style the navigation bar*/
+.nav{
+
+    font-size:2vw;
+    font-style: bold;
+    display:flex;
+    background-color:rgb(187, 206, 248);
+   
+}
+
+/*style the navigation bar links*/
+.nav a{
+    float:left;
+    text-align: center;
+    color:black;
+    padding: 1.5vw;   
+    text-decoration: none;
+}
+
+  /*style the navigation bar links on hover*/
+.nav a:hover{
+    text-decoration: underline;
+}
+
+  /*stack navigation menu */
+  @media screen and (max-width:800px) {
+      .nav {
+      flex-direction:column;
+      font-size: 4vw;
+      }
+      .header{
+          font-size: 4vw;
+      }
+  }
+
+ /*style the main section*/
+ .main{
+    font-size: 2vw;
+    background-color: rgb(82, 86, 89);
+    color:white;
+     text-align: center ; 
+}
+
+/*create two columns that float next to each other*/
+.left{
+    float: left;
+    text-align: center;
+    display:block;
+    width: 50%;
+    height:auto;
+    padding: 5%;
+    font-size: 2vw;
+    background-color:rgb(82, 86, 89);
+    color: white;
+    margin-left: 5%;
+    margin-right:5% ;
+}
+.right{
+    float:left;
+    display:block;
+    text-align: center;
+   width :40%;
+    height: auto;
+    padding: 5%;
+    font-size: 2vw;
+  background-color:rgb(82, 86, 89);
+  color: white;
+  
+}
+
+/*clear floats after the columns*/
+.row:after{
+    content:"";
+display:table;
+clear: both;
+}
+
+/*Responsive layout - 2 columns stack ontop of each other*/
+@media screen and (max-width:800px) {
+    .left, .right {
+        width:100%;
+        font-size: 3vw;
+        margin: 0;
+    }
+}
+    
+/*style the links*/
+.link {
+    color: white;
+    text-decoration: none;
+    }
+    
+/*style the links on hover*/
+    .link:hover{
+        text-decoration: underline;
+}
+
+/*style the contact section on home page*/
+
+.contact{
+    float:left;
+    display:block;
+    font-size: 1.5vw;
+    width: 25%;
+    height:12vw;
+    padding-left: 2vw;
+    color: black;
+    background-color: rgb(187, 206, 248);;
+}
+
+/*Responsive layout -  2 contact columns stack ontop of each other*/
+@media screen and (max-width:800px) {
+    .contact {
+        width: 50%;
+        font-size: 2.5VW;
+         height: 14vw;
+      }
+}
+
+/*Footer layout */
+.foot {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 2vw;
+    padding: 2vw;
+}
+/*Responsive layout - footer*/
+@media screen and (max-width:800px) {
+    .foot {
+        font-size:3vw}
+    }
+
+
+/*Image gallery for menu*/
+.gallery {
+    background-color:rgb(82, 86, 89);
+    color:white;
+      float: left;
+    width: 33.333%;
+     
+  }
+  .gallery img{
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery:hover {
+    border: 5px solid #ccc; 
+    margin-bottom: 5vw;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+   
+/*Responsive layout for Menu Gallery - 3 columns stack ontop of each other*/
+@media screen and (max-width:800px) {
+    .gallery {
+        width:95%;
+        padding: 2vw;
+        margin:3vw;
+        border: 2px solid #ccc; 
+    }
+
+    .desc {
+        font-size: 3vw;
+    }
+}
+
+/* Menu */
+.menu{
+    text-align: center;
+    display:inline-block;
+    width: 60%;
+    margin: 2vw;
+    margin-left:20%;
+    margin-right:20%;
+    padding: 1vw;
+    font-size: 1.8vw;
+    background-color: white;
+    color: black;
+    border-style: solid;
+   
+}
+/*Responsive layout - menu*/
+@media screen and (max-width:800px) {
+    .menu {
+       font-size:4vw;
+       width: 95%;
+       margin: 2.5%;
+    }   
+}
+
+/* Responsive iFrame for Map and calendar */
+
+.responsive {
+    position: relative; 
+    padding-bottom: 100%; 
+    height: 0; 
+    overflow: hidden;
+    }
+     
+    .responsive iframe {
+    position: absolute; 
+    top:0; 
+    left: 0;
+    width: 100%; 
+    height:100%;
+    }
+
+    /** Style the buttons **/
+
+.button{
+  background-color:rgb(187, 206, 248); 
+  color: black;
+  width: 45%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  margin:2vw;
+  padding: 2vw;
+  
+}
+/*Responsive layout - button*/
+@media screen and (max-width:800px) {
+    .button {
+       width: 95%;
+       margin: 2vw;
+       padding: 2vw;
+       font-size: 4vw;
+    }
+}
+
+/** Additional style for the book now button **/
+#book{
+width: 95%;
+} 
+
