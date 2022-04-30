@@ -265,3 +265,7 @@ clear: both;
 width: 95%;
 } 
 
+/** Additional style for the privacy page **/
+#privacy{
+    text-align: left;
+}
